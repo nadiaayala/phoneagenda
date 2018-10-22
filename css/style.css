@@ -1,3 +1,7 @@
 .bg-color{
     background-color: rgba(163, 203, 255, 0.637);
 }
+.small{
+    width: 16%;
+    cursor: pointer;  
+}

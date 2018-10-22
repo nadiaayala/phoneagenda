@@ -64,7 +64,7 @@ $(function(){
             else
             {
              $divAlert = $('<div class="alert alert-warning alert-dismissible"> Please, insert a valid phone number!</div>');
-             var $alertBtn = $('<button id="$closeBtn" class="close" data-dismiss="alert"> x </button>') 
+             var $alertBtn = $('<button id="$closeBtn" class="close" data-dismiss="alert"> &times; </button>') 
              $divAlert.append($alertBtn);
              $contacts.prepend($divAlert);
              $divAlert.on('click', function(){
