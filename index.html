@@ -3,31 +3,40 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Agenda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="scripts.js" defer></script>
-    <script src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container border border-primary" id="container">
         <h1 class="text-center"> Phone Agenda </h1>    
             <div class="col-md-4 text-center mx-auto h-100">
                 <p > Add a new contact:</p>
-                <input placeholder="Name:" id="name"></input>
-                <input placeholder="Phone:" id="phone"></input>
+                <input placeholder="Name:" id="name" type="text"></input>
+                <input placeholder="Phone:" id="phone" type="text" maxlength="15"></input>
                 
             </div>
             <div class="text-center">
-                <button id="add" class="btn btn-primary btn-md m-3"> ADD  </button>
+                <button id="add" class="btn btn-primary btn-lg m-3"> ADD  </button>
             </div>
-            <div id="contacts" class="w-100"> </div>
-    </div>    
+            <div id="contacts" class="w-100">
+                <div id="letterA"><h3>A</h3></div> 
+                <div id="letterB"><h3>B</h3></div>
+                <div id="letterC"><h3>C</h3></div>
+                <div id="letterD"><h3>D</h3></div>
+                <div id="letterE"><h3>E</h3></div>
+                <div id="letterF"><h3>F</h3></div>
+                <div id="letterG"><h3>G</h3></div>
+                <div id="letterH"><h3>H</h3></div>
+
+            </div>
+    </div>   
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
 </body>
 </html>
