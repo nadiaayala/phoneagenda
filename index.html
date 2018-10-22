@@ -10,13 +10,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container border border-primary" id="container">
+    <div class="container border border-primary col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-8" id="container">
         <h1 class="text-center"> Phone Agenda </h1>    
-            <div class="col-md-4 text-center mx-auto h-100">
-                <p > Add a new contact:</p>
-                <input placeholder="Name:" id="name" type="text"></input>
-                <input placeholder="Phone:" id="phone" type="text" maxlength="15"></input>
-                
+            <div class="col-sm-12 col-md-12 col-lg-10 text-center mx-auto h-100">
+                <p> Add a new contact:</p>
+                <div class="row">
+                <div class="col-md-6 mb-2 mb-sm-2"> 
+                    <input placeholder="Name:" id="name" type="text" class="w-100 text-center"></input>
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="Phone:" id="phone" type="text" maxlength="15" class="w-100 text-center"></input> 
+                </div>
+            </div>
             </div>
             <div class="text-center">
                 <button id="add" class="btn btn-primary btn-md m-3"> ADD  </button>
