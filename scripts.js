@@ -13,7 +13,7 @@ $(function(){
     const $letterE = $('#letterE');
     const $letterF = $('#letterF');
     const $letterG = $('#letterG');
-    const $letterH = $('#letterH');    
+    const $letterH = $('#letterH');     
 
     $($inputName).on('keyup', function(){
         $textEnteredName= $('#name').val();
@@ -28,7 +28,7 @@ $(function(){
         {            
             if($.isNumeric($textEnteredPhone)){
                 var $newContact = $('<div class="d-flex justify-content-around">');
-                var $newList = $('<div class="d-flex flex-row bg-light border border-dark w-75 justify-content-around mt-1"></div>')
+                var $newList = $('<div class="d-flex flex-row bg-light border border-primary w-75 justify-content-around mt-1"></div>')
                 var $newName = $('<div>' + $textEnteredName+' </div>');
                 var $newPhone = $('<div>'+ $textEnteredPhone+ ' </div>');
                 $newList.prepend($newName);
@@ -36,7 +36,8 @@ $(function(){
                 $newContact.append($newList);
                 var $first = $textEnteredName.charAt(0);
                 if( $first=='a'){ 
-                    $letterA.append($newContact);          
+                    $letterA.append($newContact);   
+                         
                 }
                 else if ($first=='b'){
                     $letterB.append($newContact);
