@@ -27,7 +27,7 @@ $(function(){
         if($textEnteredName!='' && $textEnteredName!=undefined)
         {            
             if($.isNumeric($textEnteredPhone)){
-                var $newContact = $('<div class="d-flex justify-content-around">');
+                var $newContact = $('<div class="d-flex justify-content-around" id="newContact">');
                 var $newList = $('<div class="d-flex flex-row bg-light border border-primary w-75 justify-content-around mt-1"></div>')
                 var $newName = $('<div>' + $textEnteredName+' </div>');
                 var $newPhone = $('<div>'+ $textEnteredPhone+ ' </div>');
@@ -35,9 +35,8 @@ $(function(){
                 $newList.append($newPhone);
                 $newContact.append($newList);
                 var $first = $textEnteredName.charAt(0);
-                if( $first=='a'){ 
-                    $letterA.append($newContact);   
-                         
+                if( $first=='a'){
+                    $letterA.append($newContact);                          
                 }
                 else if ($first=='b'){
                     $letterB.append($newContact);
@@ -60,6 +59,9 @@ $(function(){
                 else if ($first=='h'){
                     $letterH.append($newContact);
                 }
+                $inputName.val('');
+                $inputPhone.val('');
+                
             }
             else
             {
